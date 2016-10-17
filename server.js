@@ -20,7 +20,7 @@ var articleOne ={
             <p>
                  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.This is the content for my first article. This is the content for my first article. This is the content for my first article.
             </p>`
-    }
+    };
 
 function createtemplate (data) {
     var title = data.title;
@@ -64,7 +64,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-    res.send(createTemplate(articleOne));
+     res.send(createtemplate(articleOne));
     });
     
 app.get('/article-two', function (req, res) {
