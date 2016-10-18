@@ -27,7 +27,6 @@ function createtemplate (data) {
     var date = data.date;
     var heading = data.heading;
     var content = data.contet;
-    
 var htmltemplate = `
 <head>
         <title>
@@ -63,7 +62,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-     res.send(createtemplate(articleOne));
+ res.send(createTemplate(articleOne));
     });
     
 app.get('/article-two', function (req, res) {
