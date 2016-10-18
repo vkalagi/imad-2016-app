@@ -44,13 +44,13 @@ function createtemplate (data) {
         </div>
         <hr/>
         <h3>
-            S{heading}
+            ${heading}
         </h3>
         <div>
-            S{date}
+            ${date}
         </div>
         <div>
-        S{content}
+        ${content}
         </div>
         </div>
     </body>
