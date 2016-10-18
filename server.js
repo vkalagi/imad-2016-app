@@ -22,7 +22,7 @@ var articleOne ={
             </p>`
     };
     
-function createtemplate (data) {
+function createTemplate (data) {
     var title = data.title;
     var date = data.date;
     var heading = data.heading;
@@ -50,7 +50,7 @@ function createtemplate (data) {
             ${date}
         </div>
         <div>
-        ${content}
+           ${content}
         </div>
         </div>
     </body>
