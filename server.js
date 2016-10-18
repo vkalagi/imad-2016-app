@@ -31,6 +31,7 @@ function createTemplate (data) {
      var htmlTemplate = `
 <html>
     <head>
+    <head>
         <title>
             S{title}
         </title>
