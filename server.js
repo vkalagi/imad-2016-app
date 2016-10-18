@@ -32,7 +32,7 @@ function createTemplate (data) {
 <html>
     <head>
         <title>
-            S{title}
+            Article one | Habeeb N A
         </title>
         <meta name="viewport" content="width-device-width, initial-scale-1" />
         <link href="/ui/style.css" rel="stylesheet" />
