@@ -56,7 +56,7 @@ function createTemplate (data) {
     </body>
 </html>
      `;  
-    return htmltemplate;     
+    return htmlTemplate;     
 }
   
 app.get('/', function (req, res) {
