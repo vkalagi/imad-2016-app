@@ -32,7 +32,7 @@ function createTemplate (data) {
 <html>
     <head>
         <title>
-            Article one | Habeeb N A
+            Article One | Habeeb N A
         </title>
         <meta name="viewport" content="width-device-width, initial-scale-1" />
         <link href="/ui/style.css" rel="stylesheet" />
@@ -64,7 +64,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
- res.send(createTemplate(articleOne));
+ res.send(createTemplate(article-one));
  });
     
 app.get('/article-two', function (req, res) {
