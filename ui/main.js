@@ -1,15 +1,25 @@
 // counter code
 var button = document.getElementById('counter');
-var counter = 0;
 
 button.onclick = function() {
     
-    // Make a request to the counte end point
+    // Create a request object
+    var request = new XMLHttp(Request);
+    
     
     // Capture the response and store it in a variable
-    
-    // Render the variable in the correct span
-    counter = counter + 1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    request.onreadystatechange = function(){
+        if (request.readyState === XMLHttprequest.DONE){
+            // Take some action
+            if (request.status === 200)
+            var counte = request.responseTex;
+            var span = document.getElementById('count');
+            span.innerHTML = counter.toString();
+        }
+        // Not yet done
+    };
+ 
+    // Make the request
+    request.open('GET' 'http://vkalagi.imad.hasura-app.io/counter' , true);
+    request.send(null);
 };
