@@ -111,7 +111,7 @@ var names = [];
 app.get ('/submit-name/:name', function(req, res){
     // Get the names from request
     var name = req.params.name;
-    name.push(name);
+    names.push(name);
     res.send(JSON.strigify(names));
 });
 // JSON JavaSript Object Notation
